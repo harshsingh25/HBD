@@ -1,0 +1,176 @@
+
+*{
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header{
+position:fixed;
+color:#f1ebbb;
+height: 3.3rem;
+background-color: #45046a;
+width:100% ; 
+}
+
+
+body{
+  background-color: #f1ebbb;
+}  
+
+.header-left{
+  float: left;
+  padding: .6rem .3rem 0;
+  
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:bold;
+  font-size: .6rem;
+  
+}
+
+
+
+li{
+  list-style: none;
+}
+
+  
+
+.menu {
+  background-color:#45046a;
+  color: #f1ebbb;
+  height:3.3rem;
+  font-size: 1rem;
+  border:none;
+  
+  cursor: pointer;
+  display: none;
+
+}
+.menu-d {
+  display: none;
+  background-color: #45046a;
+  z-index: 1;
+}
+
+.header-right{
+  text-align: right;
+float:right;
+font-family: sans-serif;
+font-size: .9rem;
+}
+ 
+ul{ color:#f1ebbb;
+  list-style-type:none;
+
+}
+
+
+.body0{
+position: relative;
+  min-height: 100vh;  
+}
+.body1{
+  padding: 4rem .5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+
+}
+
+
+.foot{
+ 
+  position: absolute;
+  bottom: 0;
+  
+  background-color: #45046a;
+  width:100%; 
+  min-height: 3.3rem;
+}
+
+.foot-i{ 
+  padding: .2rem;
+}
+.foot-i  a{font-family: sans-serif;
+  font-style: normal ;
+  font-size: .7rem;
+  text-decoration: none;
+  color: #f1ebbb;
+  display: inline-block;
+  border-right: #f1ebbb solid 1px ;
+  
+  padding: 0 .3rem;
+  margin:.2rem 0;
+}
+.foot-i li{
+  
+  display: inline-block;
+}
+.mi:hover{
+ color: black;
+background-color:#5c2a9d; 
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .menu{
+    display: inline-block;
+  }
+
+.menu-i{
+  color: #f1ebbb;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.menu-d li:hover{background-color: #5c2a9d;
+color: black;
+text-align: center;}
+.menu-d a:hover{background-color: #5c2a9d;
+  color: black;}
+.header-right:hover .menu-d {
+    display: block;
+  }
+
+.header-right:hover .menu {
+  background-color:#5c2a9d;
+}
+ 
+}
+@media only screen and (min-width: 768px){
+.menu-i {
+  color:#f1ebbb;
+  padding: 12px 16px;
+
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header-right li{height:3.3rem;
+  padding:.3rem;
+  text-align: center;
+  color: #f1ebbb;
+  background-color: #45046a;
+  float:left;
+}
+.menu-d{display: inline-block;}
+
+.menu-d li:hover{background-color: #5c2a9d;
+color: #f1ebbb;
+text-align: center;}
+}
+
+.footer{
+  padding:.5rem 0 0;
+  color: #f2f2f2;
+  text-align: center;
+}
