@@ -85,11 +85,11 @@ res.send("failed");
       else if (length=5){nowup=nowup.concat("!!");}
       else if (length=6){nowup=nowup.concat("!");}
     
-      var paras = msg.split('-');
+      var pars = input.msg('-');
 
       res.render("birthday",{
           nowname: name,
-          nowmsg: paras,
+          nowmsg: msg,
           length: length,
           nown:nowup
         });
