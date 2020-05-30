@@ -15,15 +15,15 @@ a{
 }
 .header{
 position:fixed;
-color:#f1ebbb;
+color:#4d4d4e;
 height: 3.3rem;
-background-color: #45046a;
+background-color: #87cefa;
 width:100% ; 
 }
 
 
 body{
-  background-color: #f1ebbb;
+  background-color: white;
 }  
 
 .header-left{
@@ -45,8 +45,8 @@ li{
   
 
 .menu {
-  background-color:#45046a;
-  color: #f1ebbb;
+  background-color:#87cefa;
+  color: #4d4d4e;
   height:3.3rem;
   font-size: 1rem;
   border:none;
@@ -57,7 +57,7 @@ li{
 }
 .menu-d {
   display: none;
-  background-color: #45046a;
+  background-color: #87cefa;
   z-index: 1;
 }
 
@@ -68,7 +68,7 @@ font-family: sans-serif;
 font-size: .9rem;
 }
  
-ul{ color:#f1ebbb;
+ul{ color:#4d4d4e;
   list-style-type:none;
 
 }
@@ -91,7 +91,7 @@ position: relative;
   position: absolute;
   bottom: 0;
   
-  background-color: #45046a;
+  background-color: #87cefa;
   width:100%; 
   min-height: 2.3rem;
 }
@@ -103,9 +103,9 @@ position: relative;
   font-style: normal ;
   font-size: .7rem;
   text-decoration: none;
-  color: #f1ebbb;
+  color: #4d4d4e;
   display: inline-block;
-  border-right: #f1ebbb solid 1px ;
+  border-right: #4d4d4e solid 1px ;
   
   padding: 0 .3rem;
   margin:.2rem 0;
@@ -116,7 +116,7 @@ position: relative;
 }
 .mi:hover{
  color: black;
-background-color:#5c2a9d; 
+background-color:#50bcff; 
 }
 
 
@@ -127,30 +127,30 @@ background-color:#5c2a9d;
   }
 
 .menu-i{
-  color: #f1ebbb;
+  color: #4d4d4e;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 
-.menu-d li:hover{background-color: #5c2a9d;
+.menu-d li:hover{background-color: #50bcff;
 color: black;
 text-align: center;}
-.menu-d a:hover{background-color: #5c2a9d;
+.menu-d a:hover{background-color: #50bcff;
   color: black;}
 .header-right:hover .menu-d {
     display: block;
   }
 
 .header-right:hover .menu {
-  background-color:#5c2a9d;
+  background-color:#50bcff;
 }
  
 }
 @media only screen and (min-width: 768px){
 .menu-i {
-  color:#f1ebbb;
+  color:#4d4d4e;
   padding: 12px 16px;
 
   text-decoration: none;
@@ -160,14 +160,14 @@ text-align: center;}
 .header-right li{height:3.3rem;
   padding:.3rem;
   text-align: center;
-  color: #f1ebbb;
-  background-color: #45046a;
+  color: #4d4d4e;
+  background-color: #87cefa;
   float:left;
 }
 .menu-d{display: inline-block;}
 
-.menu-d li:hover{background-color: #5c2a9d;
-color: #f1ebbb;
+.menu-d li:hover{background-color: #50bcff;
+color: #4d4d4e;
 text-align: center;}
 }
 
