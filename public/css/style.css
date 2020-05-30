@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p, div {
 }
 
 a{
+  color: black;
   text-decoration: none;
 }
 .header{
@@ -19,6 +20,7 @@ color:#4d4d4e;
 height: 3.3rem;
 background-color: #87cefa;
 width:100% ; 
+
 }
 
 
@@ -51,7 +53,6 @@ li{
   height:3.3rem;
   font-size: 1rem;
   border:none;
-  
   cursor: pointer;
   display: none;
 
@@ -182,10 +183,24 @@ text-align: center;}
 
 .create{
   border-radius: 12px;
-  display: inline-block;
+  display: inline-block; 
   text-align: left;
   margin: 20px auto;
   padding: 20px 35px;
   background-color: #87cefa;
    
+}
+
+.dot{
+  margin: auto;
+  border-bottom: 5px dotted #74969e;
+  width:10%;  
+}
+
+.ba{
+  text-shadow: 1px 1px #4d4d4e;
+  color: #50bcff;
+}
+.ba:hover{
+  color: #4dff2a;
 }
