@@ -25,6 +25,28 @@ const hbdSchema = {
  
 const HBD= mongoose.model("happy", hbdSchema);
   
+
+app.get("/", function(req, res){
+  res.render("home");
+});
+
+
+app.get("/create", function(req, res){
+    res.render("create");  
+});
+
+
+app.get("/about", function(req, res){
+
+
+  res.render("about");
+});
+
+
+app.listen(port, function() {
+console.log("Server started on port 3000");
+});
+
 app.post("/create", function(req, res){
     const u =  req.body.hbdurl.replace(/\s+/g, '-').toLowerCase();  
    
@@ -33,46 +55,45 @@ app.post("/create", function(req, res){
      url: u,
      message: req.body.hbdmsg
    });
- 
+   if(hbd.name.length<=7){
    hbd.save(function(err){
     if (!err){
-         res.render("created",        {     u:u
+         res.render("created",{     
+           u:u
          });
      }
    });
+  }else{
+res.send("failed");   
+  }
  });
  
+ app.get("/:hbdu", function(req, res){ 
+     const requestedu = req.params.hbdu.replace(/\s+/g, '-').toLowerCase(); ;
+    HBD.findOne({url: requestedu}, function(err, hbd){
+    if(!err){
+    if(hbd){let msg = hbd.message;
+      let nowup;   
+      let name= hbd.name;
+      var length=name.length;
+      nowup=name;
 
+      if(length=1){nowup=nowup.concat("!!!!!!");}
+      else if (length=2){nowup=nowup.concat("!!!!!");}
+      else if (length=3){nowup=nowup.concat("!!!!");}
+      else if (length=4){nowup=nowup.concat("!!!");}
+      else if (length=5){nowup=nowup.concat("!!");}
+      else if (length=6){nowup=nowup.concat("!");}
+    
 
-
-
-app.get("/", function(req, res){
-    res.render("home");
-});
-
-app.get("/harsh", function(req, res){
-    res.render("birthday");
-});
-
-app.get("/create", function(req, res){
-      res.render("create");
-  
-});
-
-
-app.get("/about", function(req, res){
-
-  
-    res.render("about");
-});
-
-app.get("/contact", function(req, res){
-  
-    res.render("contact");
-});
-
-
-
-app.listen(port, function() {
-  console.log("Server started on port 3000");
+      res.render("birthday",{
+          nowname: name,
+          nowmsg: msg,
+          length: length,
+          nown:nowup
+        });
+    }
+    else{res.redirect("/");} 
+    }   
+  });
 });

@@ -143,12 +143,12 @@ $('document').ready(function(){
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 		$('#b1').attr('id','b11');
-		$('#b2').attr('id','b22')
-		$('#b3').attr('id','b33')
-		$('#b4').attr('id','b44')
-		$('#b5').attr('id','b55')
-		$('#b6').attr('id','b66')
-		$('#b7').attr('id','b77')
+		$('#b2').attr('id','b22');
+		$('#b3').attr('id','b33');
+		$('#b4').attr('id','b44');
+		$('#b5').attr('id','b55');
+		$('#b6').attr('id','b66');
+		$('#b7').attr('id','b77');
 		$('#b11').animate({top:280, left: vw-175},500);
 		$('#b22').animate({top:280, left: vw-125},500);
 		$('#b33').animate({top:280, left: vw-75},500);
