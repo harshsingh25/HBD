@@ -1,16 +1,20 @@
 
 <%- include("partials/header"); -%>
-    <h3>Create</h3>
+    <div class="create">
+    <h3>Create</h3><br>
     <form class="" action="/create" method="post">
       <div class="form-group">
-        <label>Name/Nickname<SPAN style="font-weight: lighter;">(5-7 Characters)</SPAN></label><br>
+        <label>Name/Nickname<br><SPAN style="font-weight: lighter;">(max 7 Characters)</SPAN></label><br>
         <input class="form-control" type="text" name="hbdname"><br>
-        <label>Url<SPAN style="font-weight: lighter;"">(ex:harsh-singh)</SPAN></label><br>
+        <br><label>Url<SPAN style="font-weight: lighter;"">(ex:harsh-singh)</SPAN></label><br>
         <input class="form-control" type="text" name="hbdurl"><br>
-        <label>Message</label><br>
+        <br><label>Message</label><br>
+        <SPAN style="font-weight: lighter;">(use '-' at end of each line)</SPAN><br>
         <textarea class="form-control" name="hbdmsg" rows="10" cols="25"></textarea><br>
 
       </div>
       <button class="btn btn-primary" type="submit" name="button">Submit</button>
     </form>   
-<%- include("partials/footer"); -%>
+  
+    </div>
+    <%- include("partials/footer"); -%>
