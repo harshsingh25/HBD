@@ -22,6 +22,10 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
+app.get("/harsh", function(req, res){
+    res.render("birthday");
+});
+
 app.get("/create", function(req, res){
       res.render("create");
   
